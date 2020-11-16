@@ -1,0 +1,69 @@
+<html>
+<!-- userInputExamples/addLecture.html -->
+<head>
+    <title>
+        Web Technologies - CS4413
+    </title>
+</head>
+<body>
+<h1 style="color: red">
+    Add a New Lecture
+</h1>
+<h3>
+    CS4413
+</h3>
+<hr>
+<div id="add-form">
+    <form action="addLecture.php" method="post">
+        <div>
+            <label for="lecture_name">Lecture Name</label>
+            <input type="text" id="lecture_name" name="lecture_name">
+        </div>
+        <br>
+        <div>
+            <label for="week">Week</label>
+            <select id="week" name="week">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="5" cols="30"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="has_assignment">Has Assignment?</label>
+            <input type="checkbox" id="has_assignment" name="has_assignment" value="1">
+        </div>
+        <br>
+        <div>
+            Difficulty level
+        </div>
+        <div>
+            <label for="difficulty1">1</label>
+            <input type="radio" id="difficulty1" name="difficulty" value="1">
+        </div>
+        <div>
+            <label for="difficulty2">2</label>
+            <input type="radio" id="difficulty2" name="difficulty" value="2">
+        </div>
+        <div>
+            <label for="difficulty3">3</label>
+            <input type="radio" id="difficulty3" name="difficulty" value="3">
+        </div>
+        <div>
+            <label for="difficulty4">4</label>
+            <input type="radio" id="difficulty4" name="difficulty" value="4">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>
